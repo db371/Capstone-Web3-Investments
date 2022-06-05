@@ -1,4 +1,4 @@
-**The code files presented are for the Capstone Project undertaken at Duke University, Fuqua School of Business.**
+**The code files presented are for the Capstone Project, 'Should you add Alternative Assets to your portfolio?' undertaken at Duke University, Fuqua School of Business.**
 
 Team: Damodar Bihani, Kevin Garcia, Qiwei Liu, Mrunmayee Padhye
 
