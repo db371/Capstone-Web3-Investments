@@ -24,4 +24,4 @@ corrplot.mixed(cor_analysis)
 
 #Export
 datfr_2021_8 = data.frame(dat_2021_8)
-write.csv(datfr_2021_8, "/Users/andyqiwei/Desktop/Capstone\ Data/2021_8\ weight/datfr_2021_8.csv")
+write.csv(datfr_2021_8, "/Users/damodarbihani/Desktop/Capstone\ Data/2021_8\ weight/datfr_2021_8.csv")
