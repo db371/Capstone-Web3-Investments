@@ -1,5 +1,5 @@
 #Data cleaning on Stock
-stock_all = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/Stock/sp500_stocks.csv")
+stock_all = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/Stock/sp500_stocks.csv")
 
 N_stock = length(unique(stock_all$Symbol))
 stock_list = unique(stock_all$Symbol)
@@ -30,9 +30,9 @@ colnames(stock_return) = paste(stock_list,"Return")
 data_stock = data.frame("date" = as.Date(stock_all[stock_all$Symbol == "AAPL", 1]),stock_return) #make the final data frame
 
 #Export
-#write.csv(stock_return,"/Users/andyqiwei/Desktop/Capstone\ Data/Stock/Finish/stock_return.csv")
-#write.csv(stock_cleaned,"/Users/andyqiwei/Desktop/Capstone\ Data/Stock/Finish/stock_adj.closed.csv")
-save(data_stock, "data_stock", file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/data_stock.rda")
+#write.csv(stock_return,"/Users/damodarbihani/Desktop/Capstone\ Data/Stock/Finish/stock_return.csv")
+#write.csv(stock_cleaned,"/Users/damodarbihani/Desktop/Capstone\ Data/Stock/Finish/stock_adj.closed.csv")
+save(data_stock, "data_stock", file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/data_stock.rda")
 
 
 
