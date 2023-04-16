@@ -1,7 +1,7 @@
 # Crypto Data Cleaning
 
 #Read all crypto data simultaneously
-path <- "/Users/andyqiwei/Desktop/Capstone\ Data/Cryptos_new"
+path <- "/Users/damodarbihani/Desktop/Capstone\ Data/Cryptos_new"
 fileNames <- dir(path) 
 filePath <- sapply(fileNames, function(x){ 
   paste(path,x,sep='/')})   
@@ -25,5 +25,5 @@ for(i in 1:length(filePath))
 }
 
 #Export
-#save(data_crypto,"data_crypto",file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
-#load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
+#save(data_crypto,"data_crypto",file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
+#load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
