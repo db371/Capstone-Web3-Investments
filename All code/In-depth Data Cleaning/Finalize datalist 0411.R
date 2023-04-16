@@ -2,7 +2,7 @@
 #Separate the dataset according to year and month to have different time window for analysis
 
 library(lubridate)
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/all_data_new.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/all_data_new.rda")
 all_data_new = all_data_new[c(-1,-2,-3090),] #exclude useless rows
 
 all_data_new$year_month = paste(year(all_data_new$date),month(all_data_new$date)) #create a column of year_month
@@ -60,4 +60,4 @@ for( window in year_month_list)
 names(datalist) = year_month_list #rename
 
 #Export
-save(datalist,"datalist",file = "/Users/andyqiwei/Desktop/Capstone\ Data/Finalize\ datalist\ 0411/finaldatalist.rda")
+save(datalist,"datalist",file = "/Users/damodarbihani/Desktop/Capstone\ Data/Finalize\ datalist\ 0411/finaldatalist.rda")
