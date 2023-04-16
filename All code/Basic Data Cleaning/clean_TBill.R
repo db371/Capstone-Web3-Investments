@@ -1,7 +1,7 @@
 #Data cleaning for Treasury bonds
 
 #Read treasury bonds simultaneously
-path <- "/Users/andyqiwei/Desktop/Capstone\ Data/treasury\ bonds"
+path <- "/Users/damodarbihani/Desktop/Capstone\ Data/treasury\ bonds"
 fileNames <- dir(path) 
 filePath <- sapply(fileNames, function(x){ 
   paste(path,x,sep='/')})   
@@ -20,4 +20,4 @@ for (i in 1:length(data_bond))
 }
 
 #Export
-save(bond_all,"data_bond",file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/data_bond.rda")
+save(bond_all,"data_bond",file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/data_bond.rda")
