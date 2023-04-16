@@ -1,14 +1,14 @@
 #Data cleaning on NFT AVG Price data
 
 #Read files simultaneously in the same folder
-path <- "/Users/andyqiwei/Desktop/Capstone\ Data/NFTs"
+path <- "/Users/damodarbihani/Desktop/Capstone\ Data/NFTs"
 fileNames <- dir(path) 
 filePath <- sapply(fileNames, function(x){ 
   paste(path,x,sep='/')})   
 data_nft <- lapply(filePath, function(x){
   read.csv(x)}) 
 
-ETH.price = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/Cryptos_new/eth.csv") #Read ETH price
+ETH.price = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/Cryptos_new/eth.csv") #Read ETH price
 ETH.price = ETH.price[,c(2,5)]
 ETH.price$date = substr(ETH.price$timestamp, 1,10) #extract date info
 ETH.price$date = as.Date(ETH.price$date) #convert to Date class
@@ -33,5 +33,5 @@ for(i in 1:length(filePath))
 }
 
 #Export
-save(data_nft,"data_nft",file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
-#load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
+save(data_nft,"data_nft",file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
+#load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
