@@ -1,6 +1,6 @@
 #Data Cleaning on vanguard ETF
 
-vanguard = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/vanguard/New\ Vanguard\ Total\ Bond\ ETF.csv")
+vanguard = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/vanguard/New\ Vanguard\ Total\ Bond\ ETF.csv")
 vanguard$Date = as.Date(vanguard$Date, format = "%m/%d/%y") #convert to date
 vanguard = vanguard[order(vanguard$Date),]
 vanguard = vanguard[,c(1,5)]
@@ -11,7 +11,7 @@ for (i in 2:nrow(vanguard)) {
 data_vanguard = data.frame("date" = vanguard$Date, ret_bond) 
 
 #Export
-save(data_vanguard,"data_vanguard", file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/data_vanguard.rda")
+save(data_vanguard,"data_vanguard", file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/data_vanguard.rda")
 
 
 
