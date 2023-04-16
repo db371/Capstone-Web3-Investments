@@ -16,4 +16,4 @@ for(i in 2: nrow(sp500))
 data_sp = data.frame("date" = sp500$date,sp_ret)
 
 #Export
-save(data_sp,"data_sp", file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/sp500.rda")
+save(data_sp,"data_sp", file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/sp500.rda")
