@@ -2,19 +2,19 @@ library(data.table)
 #This file is for data cleaning on NFT Tokens data, the output is an csv file and an rda file
 
 #NFT Tokens input
-axs = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/NFT\ Tokens/axs-usd-max.csv")
+axs = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/NFT\ Tokens/axs-usd-max.csv")
 axs = data.frame("Date" = axs[,1],"Price_axs" = axs[,2])
 axs[,1] = as.Date(substring(axs[,1],1,10))
 
-mana = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/NFT\ Tokens/mana-usd-max.csv")
+mana = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/NFT\ Tokens/mana-usd-max.csv")
 mana = data.frame("Date" = mana[,1],"Price_mana" = mana[,2])
 mana[,1] = as.Date(substring(mana[,1],1,10))
 
-sand = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/NFT\ Tokens/sand-usd-max.csv")
+sand = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/NFT\ Tokens/sand-usd-max.csv")
 sand = data.frame("Date" = sand[,1],"Price_sand" = sand[,2])
 sand[,1] = as.Date(substring(sand[,1],1,10))
 
-theta = read.csv("/Users/andyqiwei/Desktop/Capstone\ Data/NFT\ Tokens/theta-usd-max.csv")
+theta = read.csv("/Users/damodarbihani/Desktop/Capstone\ Data/NFT\ Tokens/theta-usd-max.csv")
 theta = data.frame("Date" = theta[,1],"Price_theta" = theta[,2])
 theta[,1] = as.Date(substring(theta[,1],1,10))
 
@@ -45,5 +45,5 @@ cor(Token_all[,6:9],use = "na.or.complete") #4 kinds of tokens all correlated
 data_nft_token = Token_all[,c(1,6:9)]
 
 #Output and Export
-#write.csv(Token_all[,c(1,6:9)],"/Users/andyqiwei/Desktop/Capstone\ Data/Token_return.csv")
-save(data_nft_token,"data_nft_token",file = "/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/nft_token.rda")
+#write.csv(Token_all[,c(1,6:9)],"/Users/damodarbihani/Desktop/Capstone\ Data/Token_return.csv")
+save(data_nft_token,"data_nft_token",file = "/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/nft_token.rda")
