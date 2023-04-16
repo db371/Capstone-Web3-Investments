@@ -6,7 +6,7 @@ library(ROI.plugin.quadprog)
 library(ROI.plugin.glpk)
 library(PortfolioAnalytics)
 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Finalize\ datalist\ 0411/finaldatalist.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Finalize\ datalist\ 0411/finaldatalist.rda")
 weight_list = list() #Store the outcome
 
 #Because it takes too long to run 147 portfolio in one computer, we use 8 Fuqua's computers to run the code
@@ -41,4 +41,4 @@ weight_list[[i]] = port_station
 
 #Export
 #weight_list_ql2_30_35 = weight_list
-#save(weight_list_ql2_30_35, "weight_list_ql2_30_35", file = "/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_30_35.rda")
+#save(weight_list_ql2_30_35, "weight_list_ql2_30_35", file = "/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_30_35.rda")
