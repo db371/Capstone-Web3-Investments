@@ -1,24 +1,24 @@
 #Merge the portfolios constructed on different computers together
 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_db1_71_85.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_db2_86_105.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_kg1_106_126.rda") 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_kg2_127_147.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_mp1_36_53.rda") 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_mp2_54_70.rda") 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql1_01_17.rda") 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_18_35.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_18_29.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_30_35.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_na_inf.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_db1_71_85.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_db2_86_105.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_kg1_106_126.rda") 
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_kg2_127_147.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_mp1_36_53.rda") 
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_mp2_54_70.rda") 
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql1_01_17.rda") 
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_18_35.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_18_29.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_ql2_30_35.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Datalist\ gathering/weight_list_na_inf.rda")
 
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/data_stock.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/ffr.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/nft_token.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/sp500.rda")
-load("/Users/andyqiwei/Desktop/Capstone\ Data/Data_cleaned_all/data_vanguard.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/data_stock.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/ffr.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/nft_token.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/nft.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/crypto.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/sp500.rda")
+load("/Users/damodarbihani/Desktop/Capstone\ Data/Data_cleaned_all/data_vanguard.rda")
 
 
 list_all = list()
@@ -174,7 +174,7 @@ for( i in 1: length(list_all))
 
 volatily_compare = data.frame(volatily_port,volatily_sp)
 rownames(volatily_compare) = names(datalist)
-write.csv(volatily_compare,"/Users/andyqiwei/Desktop/Capstone\ Data/Outcome/volatily_compare.csv")
+write.csv(volatily_compare,"/Users/damodarbihani/Desktop/Capstone\ Data/Outcome/volatily_compare.csv")
 
 
 
